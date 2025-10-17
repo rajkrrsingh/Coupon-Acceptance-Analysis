@@ -34,6 +34,8 @@ Data columns (total 25 columns):
  23  direction_opp         12684 non-null  int64 
  24  Y                     12684 non-null  int64 
 
+##  [View the coupon acceptance analysis notebook](prompt.ipynb)
+
 ## Key Findings - Bar Coupons
 
 ### 1. Frequency is the Strongest Predictor
@@ -50,6 +52,27 @@ Data columns (total 25 columns):
 4. drivers having non-farming occupations are are most likely accept the coupons.
 5. driver who never go to bars are least likely accept the coupons.
 
+### 3. Findings and conclusions
+
+- Overall coupon acceptance rate: **56.84%**
+- Bar coupons had lower acceptance: **41.00%**
+
+**Bar Coupon Analysis**
+   - Visit Frequency Matters Most
+   - Drivers visiting bars 3 or fewer times/month: 37.07% acceptance
+   - Drivers visiting bars more than 3 times/month: **76.88% acceptance** (2x higher)
+   - Bar-goers (>1/month) over age 25: **69.52% acceptance**, All others: 33.50% acceptance,  Difference: 36.02 percentage points
+   - Bar-goers (>1/month), no kids, non-farming occupation: **71.32% acceptance** while All others: 29.60% acceptance, Having kids as passengers drastically reduces bar coupon acceptance
+   - Drivers meeting favorable conditions (frequent bar/restaurant visits, younger age, no kids): **58.89% acceptance** while Drivers not meeting these conditions: 29.81% acceptance
+   - Younger drivers (age 20) highest acceptance (63.44%), decreases with age
+   - Occupation Healthcare Support (69.83%) and Construction (68.83%) highest; Retired (45.86%) and Legal (47.03%) lowest
+
+
+### Conclusions
+
+ - Drivers who regularly visit a venue type are 2x more likely to accept related coupons
+ - Passenger type (especially having children) significantly impacts acceptance, particularly for bar coupons
+ - Acceptance rates decline with age, with under-30 drivers showing highest engagement
 
 
 ## Tech Stack and libraries
